@@ -80,8 +80,8 @@ body {
 
 /* ------------------ Банер ------------------ */
 .banner {
-  width: 30vw;
-  height: 30vw;
+  width: 100%;
+  height: 23vw;
   margin-bottom: 50px;
   overflow: hidden;
 }
@@ -245,11 +245,13 @@ body {
 
 /* ------------------ Розклад ------------------ */
 .rozclad {
+  
   padding: 40px;
   background: #1a1a1a;
   border-radius: 20px;
   margin: 30px auto;
-  width: 75%;
+  width: 50vw;
+  height: auto
   color: #f1f1f1;
 }
 
@@ -483,5 +485,6 @@ body {
         width: 100%;
     }
 }
+
 
 
