@@ -27,7 +27,7 @@
       
       <div class="content-section">
         <div class="text">
-          <h3>Шкільний сайт 6 класу. Новини, події та корисна інформація."</h3>
+          <h3>Шкільний сайт 6 класу. Новини, події та корисна інформація.</h3>
           <H2>Новини та Подій</H2>
         </div>
       </div>
@@ -54,8 +54,9 @@
         <h3>{{ s['title'] }}</h3>
         <img src="{{ url_for('static', filename=s['img']) }}" alt="{{ s['title'] }}" width="400">
       </div>
-  </div>
-{% endfor %}
+    {% endfor %}
+</div>
+
 
 <h2>Теплі спогади</h2>
 <div class="memory-container">
@@ -79,3 +80,4 @@
   </div>
 </body>
 </html>
+
