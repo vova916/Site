@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ news['title'] }}</title>
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #e68900;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 50%px;
+            height: auto;
+            margin: 20px;
+            background-color: #1e1e1e;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #e68900;
+        }
+
+        p {
+            font-size: 24px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        button {
+            background-color: #d6af10;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #cca818;
+        }
+
+        img {
+    width: 500px;               /* невелика ширина */
+    height: auto;               /* зберігає пропорції */
+    border-radius: 12px;        /* заокруглені кути */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* легка тінь */
+    display: block;
+    margin: 20px auto;          /* центрування по горизонталі */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);     /* легке збільшення при наведенні */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6); /* більш яскрава тінь при hover */
+}
+
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ news['title'] }}</h1>
+        <p>{{ news['content'] }}</p>
+        <img src="{{ url_for('static', filename=news['img']) }}" alt="зображення новини">
+        <button onclick="window.location.href='/'">Назад</button>
+    </div>
+</body>
+</html>
