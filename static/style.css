@@ -362,159 +362,109 @@ body {
 
 /* ------------------ Адаптив ------------------ */
 
-/* Планшети */
+/* Планшети і телефони */
 @media (max-width: 1024px) {
-    .sidebar {
-        width: 200px;
-        padding: 20px 15px;
-    }
+  body {
+    flex-direction: column;
+  }
 
-    .main-content {
-        padding: 20px 15px;
-    }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-right: none;
+    border-bottom: 2px solid #cebb0f;
+    padding: 15px 10px;
+  }
 
-    .banner {
-        height: 300px;
-    }
+  .sidebar h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
 
-    .rozclad {
-        width: 90%;
-        padding: 30px;
-    }
+  .sidebar button {
+    width: 45%;
+    margin: 5px;
+    font-size: 14px;
+    padding: 10px;
+  }
 
-    .rozclad img {
-        height: 800px;
-    }
+  .main-content {
+    padding: 15px 10px;
+  }
 
-    .memory-container {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 30px;
-        gap: 30px;
-    }
+  .banner {
+    height: 200px;
+    margin-bottom: 30px;
+  }
 
-    /* новини — кнопка під фото */
-    .news-card {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+  .rozclad {
+    width: 95%;
+    padding: 20px;
+  }
 
-    .news-card img {
-        width: 100%;
-        margin-bottom: 15px;
-    }
+  .rozclad img {
+    height: 500px;
+  }
 
-    .news-card-content {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .memory-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 25px;
+  }
 
-    .news-card button {
-        margin-top: 15px;
-        align-self: center;
-    }
-}
+  .memory-card {
+    padding: 25px;
+  }
 
-/* Телефони */
-@media (max-width: 768px) {
-    body {
-        flex-direction: column;
-    }
+  .memory-card img {
+    max-height: 400px;
+    margin-bottom: 20px;
+  }
 
-    .sidebar {
-        width: 100%;
-        height: auto;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        border-right: none;
-        border-bottom: 2px solid #cebb0f;
-        padding: 15px 10px;
-    }
+  .memory-card h2 {
+    font-size: 1.8rem;
+  }
 
-    .sidebar h1 {
-        font-size: 18px;
-        margin-bottom: 10px;
-        width: 100%;
-        text-align: center;
-    }
+  .memory-card p {
+    font-size: 1rem;
+  }
 
-    .sidebar button {
-        width: 45%;
-        margin: 5px;
-        font-size: 14px;
-        padding: 10px;
-    }
+  .news-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 10px;
+  }
 
-    .main-content {
-        padding: 15px 10px;
-    }
+  .news-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    .banner {
-        height: 200px;
-        margin-bottom: 30px;
-    }
+  .news-card img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
 
-    .rozclad {
-        width: 95%;
-        padding: 20px;
-    }
+  .news-card-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .rozclad img {
-        height: 500px;
-    }
+  .news-card-content > *:not(button) {
+    order: 1;
+  }
 
-    .memory-container {
-        grid-template-columns: 1fr;
-        padding: 20px;
-        gap: 25px;
-    }
-
-    .memory-card {
-        padding: 25px;
-    }
-
-    .memory-card img {
-        max-height: 400px;
-        margin-bottom: 20px;
-    }
-
-    .memory-card h2 {
-        font-size: 1.8rem;
-    }
-
-    .memory-card p {
-        font-size: 1rem;
-    }
-
-    .news-container {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 0 10px;
-    }
-
-    .news-card {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .news-card img {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-    .news-card-content {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .news-card button {
-        margin-top: 15px;
-        align-self: center;
-    }
+  .news-card button {
+    order: 2;
+    margin-top: 15px;
+    align-self: center;
+  }
 }
