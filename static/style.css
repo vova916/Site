@@ -411,3 +411,133 @@ body {
     color: #f1f1f1;
     line-height: 1.6;
 }
+
+/* ------------------ Планшети ------------------ */
+@media (max-width: 1024px) {
+    /* Бокове меню стає менше */
+    .sidebar {
+        width: 250px;
+        padding: 20px 15px;
+    }
+
+    /* Основний контент трохи менший padding */
+    .main-content {
+        padding: 20px 15px;
+    }
+
+    /* Банер менший по висоті */
+    .banner {
+        height: 300px;
+    }
+
+    /* Розклад */
+    .rozclad {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .rozclad img {
+        height: 800px;
+    }
+
+    /* Memory cards */
+    .memory-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px;
+        gap: 30px;
+    }
+}
+
+/* ------------------ Телефон ------------------ */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+        border-bottom: 2px solid #cebb0f;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sidebar h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .sidebar button {
+        width: 48%;
+        margin-bottom: 10px;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .main-content {
+        padding: 15px 10px;
+    }
+
+    .banner {
+        height: 200px;
+        margin-bottom: 30px;
+    }
+
+    /* Розклад */
+    .rozclad {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .rozclad img {
+        height: 500px;
+    }
+
+    /* Memory cards */
+    .memory-container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 25px;
+    }
+
+    .memory-card {
+        padding: 25px;
+    }
+
+    .memory-card img {
+        max-height: 400px;
+        margin-bottom: 20px;
+    }
+
+    .memory-card h2 {
+        font-size: 1.8rem;
+    }
+
+    .memory-card p {
+        font-size: 1rem;
+    }
+
+    /* Новини */
+    .news-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .news-card {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .news-card img {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .news-card-content {
+        width: 100%;
+    }
+}
