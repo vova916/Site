@@ -250,7 +250,7 @@ body {
   background: #1a1a1a;
   border-radius: 20px;
   margin: 30px auto;
-  width: 60vw;
+  width: 70vw;
   height: auto
   color: #f1f1f1;
 }
@@ -399,6 +399,7 @@ body {
     align-self: center;
   }
 }
+
 
 
 
