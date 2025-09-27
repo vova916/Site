@@ -30,32 +30,32 @@ body {
 
 /* ------------------ Бокове меню ------------------ */
 .sidebar {
-  width: 250px; /* трохи менше на ПК */
+  width: 220px; /* компактніше на ПК */
   background: #1c1c1c;
-  padding: 20px;
+  padding: 15px;
   border-right: 2px solid #cebb0f;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 15px;
+  gap: 12px;
   position: sticky;
   top: 0;
   height: 100vh;
 }
 
 .sidebar h1 {
-  font-size: 20px;
+  font-size: 18px;
   color: #cebb0f;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .sidebar button {
   width: 100%;
-  padding: 12px;
-  border-radius: 6px;
+  padding: 10px;
+  border-radius: 5px;
   border: none;
   background: #cebb0f;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   color: #fff;
   cursor: pointer;
@@ -64,23 +64,23 @@ body {
 
 .sidebar button:hover {
   background: #bba90c;
-  transform: translateX(3px);
+  transform: translateX(2px);
 }
 
 /* ------------------ Основний контент ------------------ */
 .main-content {
   flex: 1;
-  padding: 20px;
+  padding: 15px;
   overflow-y: auto;
   opacity: 0;
-  animation: fadeInUp 0.8s ease forwards;
+  animation: fadeInUp 0.7s ease forwards;
 }
 
 /* ------------------ Банер ------------------ */
 .banner {
   width: 100%;
-  height: 250px; /* компактніше */
-  margin-bottom: 30px;
+  height: 180px; /* компактніше */
+  margin-bottom: 20px;
   overflow: hidden;
 }
 
@@ -88,23 +88,23 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
 }
 
 /* ------------------ Текстовий блок ------------------ */
 .content-section {
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 .content-section h2 {
-  font-size: 22px;
+  font-size: 20px;
   color: #cebb0f;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .content-section p {
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.4;
   color: #ccc;
   text-align: justify;
 }
@@ -112,8 +112,8 @@ body {
 /* ------------------ Кнопки ------------------ */
 .buttons {
   display: flex;
-  gap: 10px;
-  padding: 15px;
+  gap: 8px;
+  padding: 10px;
   background: #1c1c1c;
   border-bottom: 2px solid #cebb0f;
   position: sticky;
@@ -122,9 +122,9 @@ body {
 }
 
 .buttons button {
-  padding: 10px 20px;
-  font-size: 14px;
-  border-radius: 6px;
+  padding: 8px 15px;
+  font-size: 13px;
+  border-radius: 5px;
   background: #cebb0f;
   color: #1c1c1c;
   border: none;
@@ -134,34 +134,34 @@ body {
 .buttons button:hover {
   background: #bba90c;
   color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(255,187,15,0.3);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(255,187,15,0.2);
 }
 
 /* ------------------ Новини ------------------ */
 .news-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* трохи менше */
-  gap: 30px;
-  margin-bottom: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
 }
 
 .news-card {
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 10px;
   background: #1e1e1e;
-  border-radius: 15px;
+  border-radius: 12px;
   border: 1px solid #333;
-  padding: 15px;
-  min-height: 250px;
+  padding: 12px;
+  min-height: 200px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .news-card img {
   width: 35%;
   height: auto;
-  border-radius: 12px;
+  border-radius: 10px;
   object-fit: cover;
 }
 
@@ -174,91 +174,91 @@ body {
 }
 
 .news-card h2 {
-  font-size: 18px;
+  font-size: 16px;
   color: #cebb0f;
-  margin: 0 0 5px 0;
+  margin: 0 0 4px 0;
 }
 
 .news-card p {
-  font-size: 14px;
+  font-size: 13px;
   color: #ddd;
 }
 
 .news-card button {
-  padding: 8px 18px;
-  font-size: 14px;
+  padding: 6px 12px;
+  font-size: 12px;
   background: #cebb0f;
   color: #fff;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
 .news-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(255,152,0,0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 7px 20px rgba(255,152,0,0.25);
 }
 
 /* ------------------ Розклад ------------------ */
 .rozclad {
-  padding: 30px;
-  width: 80%;
-  margin: 20px auto;
-  border-radius: 15px;
+  padding: 20px;
+  width: 85%;
+  margin: 15px auto;
+  border-radius: 12px;
 }
 
 .rozclad h2 {
-  font-size: 28px;
+  font-size: 24px;
   color: #ffcc00;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .rozclad > div {
   background: #0f0f0f;
-  padding: 20px;
-  border-radius: 12px;
-  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
 /* ------------------ Memory ------------------ */
 .memory-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  padding: 30px;
+  gap: 20px;
+  padding: 20px;
 }
 
 .memory-card {
   background: #1a1a1a;
-  border-radius: 15px;
-  padding: 25px;
+  border-radius: 12px;
+  padding: 20px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .memory-card img {
   width: 100%;
-  max-height: 400px;
-  border-radius: 12px;
+  max-height: 300px;
+  border-radius: 10px;
   object-fit: cover;
-  margin-bottom: 15px;
-}
-
-.memory-card h2 {
-  font-size: 1.8rem;
-  color: #ffcc00;
   margin-bottom: 10px;
 }
 
+.memory-card h2 {
+  font-size: 1.6rem;
+  color: #ffcc00;
+  margin-bottom: 8px;
+}
+
 .memory-card p {
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: #f1f1f1;
-  line-height: 1.4;
+  line-height: 1.3;
 }
 
 /* ------------------ Футер ------------------ */
 .footer {
   width: 100%;
-  padding: 15px;
+  padding: 10px;
   background: #1c1c1c;
   border-top: 2px solid #cebb0f;
   text-align: center;
@@ -266,7 +266,7 @@ body {
 
 /* ------------------ Анімація ------------------ */
 @keyframes fadeInUp {
-  0% { opacity: 0; transform: translateY(20px); }
+  0% { opacity: 0; transform: translateY(15px); }
   100% { opacity: 1; transform: translateY(0); }
 }
 
@@ -274,11 +274,11 @@ body {
 
 /* Планшети */
 @media (max-width: 1024px) {
-  .sidebar { width: 180px; padding: 15px; }
-  .main-content { padding: 15px; }
-  .banner { height: 200px; }
-  .news-container { grid-template-columns: repeat(2, 1fr); gap: 20px; }
-  .memory-container { grid-template-columns: 1fr; gap: 20px; padding: 20px; }
+  .sidebar { width: 150px; padding: 10px; }
+  .main-content { padding: 10px; }
+  .banner { height: 150px; }
+  .news-container { grid-template-columns: repeat(2, 1fr); gap: 15px; }
+  .memory-container { grid-template-columns: 1fr; gap: 15px; padding: 15px; }
 }
 
 /* Телефони */
@@ -289,16 +289,16 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 10px;
+    padding: 8px;
     border-right: none;
     border-bottom: 2px solid #cebb0f;
   }
-  .sidebar h1 { font-size: 16px; width: 100%; text-align: center; margin-bottom: 5px; }
-  .sidebar button { width: 45%; font-size: 12px; padding: 8px; margin: 3px; }
-  .main-content { padding: 10px; }
-  .banner { height: 150px; margin-bottom: 20px; }
-  .rozclad { width: 95%; padding: 15px; }
-  .memory-card img { max-height: 300px; }
+  .sidebar h1 { font-size: 14px; width: 100%; text-align: center; margin-bottom: 3px; }
+  .sidebar button { width: 40%; font-size: 11px; padding: 6px; margin: 2px; }
+  .main-content { padding: 8px; }
+  .banner { height: 120px; margin-bottom: 15px; }
+  .rozclad { width: 95%; padding: 10px; }
+  .memory-card img { max-height: 200px; }
   .news-card { flex-direction: column; }
-  .news-card img { width: 100%; margin-bottom: 10px; }
+  .news-card img { width: 100%; margin-bottom: 8px; }
 }
