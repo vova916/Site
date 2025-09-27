@@ -30,7 +30,7 @@ body {
 
 /* ------------------ Бокове меню ------------------ */
 .sidebar {
-  width: 150px; /* ПК: трохи ширший */
+  width: 200px; /* ПК: трохи ширший */
   background: #1c1c1c;
   padding: 25px 20px;
   border-right: 2px solid #cebb0f;
@@ -483,4 +483,5 @@ body {
         width: 100%;
     }
 }
+
 
