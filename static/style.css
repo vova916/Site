@@ -360,84 +360,19 @@ body {
   }
 }
 
-/* ------------------ Адаптив ------------------ */
-
-/* Планшети і телефони */
 @media (max-width: 1024px) {
-  body {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    width: 100%;
-    height: auto;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    border-right: none;
-    border-bottom: 2px solid #cebb0f;
-    padding: 15px 10px;
-  }
-
-  .sidebar h1 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    width: 100%;
-    text-align: center;
-  }
-
-  .sidebar button {
-    width: 45%;
-    margin: 5px;
-    font-size: 14px;
-    padding: 10px;
-  }
-
-  .main-content {
-    padding: 15px 10px;
-  }
-
-  .banner {
-    height: 200px;
-    margin-bottom: 30px;
-  }
-
-  .rozclad {
-    width: 95%;
-    padding: 20px;
-  }
-
-  .rozclad img {
-    height: 500px;
-  }
-
+  .main-content,
+  .news-container,
+  .rozclad,
   .memory-container {
-    grid-template-columns: 1fr;
-    padding: 20px;
-    gap: 25px;
-  }
-
-  .memory-card {
-    padding: 25px;
-  }
-
-  .memory-card img {
-    max-height: 400px;
-    margin-bottom: 20px;
-  }
-
-  .memory-card h2 {
-    font-size: 1.8rem;
-  }
-
-  .memory-card p {
-    font-size: 1rem;
+    display: block;
+    opacity: 1;
+    padding: 15px;
   }
 
   .news-container {
     grid-template-columns: 1fr;
     gap: 20px;
-    padding: 0 10px;
   }
 
   .news-card {
@@ -458,12 +393,7 @@ body {
     align-items: center;
   }
 
-  .news-card-content > *:not(button) {
-    order: 1;
-  }
-
   .news-card button {
-    order: 2;
     margin-top: 15px;
     align-self: center;
   }
